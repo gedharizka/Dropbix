@@ -26,3 +26,6 @@ Route::get('/list-file', function (){
 Route::get('/detail-file', function (){
     return view('file.detail-file');
 })->name('detail-file');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
